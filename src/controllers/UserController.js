@@ -70,6 +70,22 @@ module.exports = {
                 error: 'The users information was incorrect'
             })
         }
+    },
+
+
+    async ind(req, res) {
+        try {
+
+           //console.log('email '+req.params.id)
+           res.send('id '+req.params.id)
+           
+        } catch (err) {
+            res.status(500).send({
+                error: 'The users information was incorrect'
+            })
+        }
     }
+
+
 
 }
